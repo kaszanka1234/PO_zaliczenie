@@ -6,6 +6,8 @@ class Config {
 public:
 	static const int WIDTH = 1024;
 	static const int HEIGHT = WIDTH/16*9;
+	static const int MAX_FRAMES_IN_FLIGHT = 2;
+	static const char* TITLE;
 
 #ifdef NDEBUG
 	static const bool enableValidationLayers = false;
@@ -20,4 +22,5 @@ public:
 	static const inline std::vector<const char*> deviceExtensions = {
 		VK_KHR_SWAPCHAIN_EXTENSION_NAME
 	};
+
 };
