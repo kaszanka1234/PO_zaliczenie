@@ -1,7 +1,9 @@
 #pragma once
 #define GLFW_INCLUDE_VULKAN
+//#define STB_IMAGE_IMPLEMENTATION
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
+#include <stb_image.h>
 #include <optional>
 #include <vector>
 #include <string>
@@ -105,6 +107,7 @@ private:
 	void updateUniformBuffer(uint32_t currentImage);
 	void createDescriptorPool();
 	void createDescriptorSets();
+	void createTextureImage();
 };
 
 struct Vertex{
@@ -116,10 +119,10 @@ struct Vertex{
 };
 
 const std::vector<Vertex> vertices = {
-    {{-0.5f, -0.5f}, {0.0f, 0.0f, 0.0f}},
-    {{0.5f, -0.5f}, {0.0f, 1.0f, 0.0f}},
-    {{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},
-    {{-0.5f, 0.5f}, {1.0f, 1.0f, 1.0f}}
+    {{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+    {{0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+    {{0.5f, 0.5f}, {1.0f, 0.0f, 0.0f}},
+    {{-0.5f, 0.5f}, {1.0f, 0.0f, 0.0f}}
 };
 
 const std::vector<uint16_t> indices = {
