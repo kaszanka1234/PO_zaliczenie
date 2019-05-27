@@ -9,6 +9,8 @@ public:
 	static const int MAX_FRAMES_IN_FLIGHT = 2;
 	static const char* TITLE;
 
+	static bool anisotropyEnable;
+
 #ifdef NDEBUG
 	static const bool enableValidationLayers = false;
 #else

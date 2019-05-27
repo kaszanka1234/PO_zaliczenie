@@ -152,6 +152,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Satan%27s spawn\Engine-debug.cpp" />
+    <ClCompile Include="..\Satan%27s spawn\Engine-device-creation.cpp" />
+    <ClCompile Include="..\Satan%27s spawn\Engine-Helpers.cpp" />
+    <ClCompile Include="..\Satan%27s spawn\Engine-shader-creation.cpp" />
     <ClCompile Include="..\Satan%27s spawn\main.cpp" />
     <ClCompile Include="..\Satan%27s spawn\QueueFamilyIndices.cpp" />
     <ClCompile Include="..\Satan%27s spawn\Vertex.cpp" />
